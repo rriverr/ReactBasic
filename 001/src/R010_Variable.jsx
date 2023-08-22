@@ -9,8 +9,8 @@ class R010_Variable extends React.Component {
   componentDidMount() {
     var varName = "react";
     console.log("varName1 : " + varName);
-    var varName = "200";
-    console.log("varName2 : " + varName);
+    // var varName = "200"; // => var는 재정의 / 재할당 모두 가능
+    // console.log("varName2 : " + varName); 
 
     let letName = "react";
     console.log("letName1 : " + letName);
