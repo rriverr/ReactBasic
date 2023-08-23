@@ -1,5 +1,6 @@
 import React from "react";
 import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
 
 const ExpenseItem = (props) => {
   // const expenseDate = new Date(2021, 2, 28).toString();
@@ -8,7 +9,8 @@ const ExpenseItem = (props) => {
 
   return (
     <div className="expense-item">
-      <div className="">{props.date.toLocaleDateString()}</div>
+      {/* <div className="">{props.date.toLocaleDateString()}</div> */}
+        <ExpenseDate date={props.date}/>
       <div className="expense-item__description">
         <h2>{props.title}</h2>
       </div>
