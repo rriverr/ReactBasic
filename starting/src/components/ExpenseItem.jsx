@@ -10,7 +10,6 @@ const ExpenseItem = (props) => {
 
   return (
     <Card className="expense-item">
-        {/* <div className="">{props.date.toLocaleDateString()}</div> */}
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
           <h2>{props.title}</h2>

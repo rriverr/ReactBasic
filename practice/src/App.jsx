@@ -1,37 +1,34 @@
 import React from "react";
 
-import Product from "./Product";
 import "./styles.css";
+import Card from "./components/Card";
 
-// don't change the Component name "App"
 export default function App() {
-  const products = [
-    {
-      title: "Product 1",
-      price: 10,
-      desc: "First Product",
-    },
-    {
-      title: "Product 2",
-      price: 20,
-      desc: "Second Product",
-    },
-  ];
   return (
     <div>
-      <h1>My Demo Shop</h1>
-      {/* <Product name="Product 1" price="10" desc="First Product"/>
-      <Product name="Product 2" price="20" desc="Second Product"/> */}
-      <Product
-        name={products[0].title}
-        price={products[0].price}
-        desc={products[0].desc}
-      />
-      <Product
-        name={products[1].title}
-        price={products[1].price}
-        desc={products[1].desc}
-      />
+      <h1>Todos</h1>
+
+      <Card>
+        <p>
+          Please note: Below are just the most important todos - feel free to
+          add more.
+        </p>
+      </Card>
+
+      <ul>
+        <li className="todo">
+          <Card>
+            <h2>Learn React</h2>
+            <p>Learn React fundamentals & explore core concepts</p>
+          </Card>
+        </li>
+        <li className="todo">
+          <Card>
+            <h2>Practice React</h2>
+            <p>Apply your knowledge & build demo projects</p>
+          </Card>
+        </li>
+      </ul>
     </div>
   );
 }

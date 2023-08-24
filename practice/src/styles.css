@@ -6,20 +6,24 @@ body {
   color: #959090;
 }
 
-.product {
+ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+li {
   margin: 1rem 0;
-  padding: 1rem;
-  background-color: #373535;
-  color: #e7e4e4;
-  border-radius: 8px;
 }
 
-.product h2,
-.product p {
-  margin: 0.5rem 0;
+.todo h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #eee;
 }
 
-.price {
-  font-size: 0.75rem;
-  color: #bab6b6;
+.todo p {
+  margin: 0.5rem 0 0 0;
+  color: #999;
 }
