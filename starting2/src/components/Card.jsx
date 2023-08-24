@@ -2,12 +2,12 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    
-      <li className="concept" style={{float: "left"}}>
+      <li className="concept">
         <img src={props.img} alt={props.title} />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
       </li>
+
   );
 };
 

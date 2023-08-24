@@ -30,9 +30,7 @@ function App() {
   return (
     <div>
       <Header img={keyConceptsImage} />
-      <div>
-        <CardList data={concepts} />
-      </div>
+      <CardList data={concepts} />
     </div>
   );
 }
