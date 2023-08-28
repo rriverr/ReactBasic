@@ -2,13 +2,19 @@ import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import './css/Expenses.css'
 import Card from "./Card";
+import ExpensesFilter from "./newexpenses/ExpenseFilter";
 
 const Expenses = (props) => {
 
   const expenses = props.data;
 
+  const onFilter = (data) => {
+    console.log(data);
+  }
+
   return (
     <Card className="expenses">
+    <ExpensesFilter onFilter={onFilter}/>
       <ExpenseItem
         id={expenses[0].id}
         title={expenses[0].title}

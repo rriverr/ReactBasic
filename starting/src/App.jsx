@@ -30,12 +30,16 @@ export default function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const onAddExpense = (data) => {
+    console.log(data);
+  };
+
   return (
     <div>
       <h2>Let's get started!</h2>
-      {/* <p>This is also visible!</p> */}
-        <NewExpenses/>
-        <Expenses data={expenses} />
+      <NewExpenses onAddExpense={onAddExpense} />
+      <Expenses data={expenses} />
     </div>
   );
 }

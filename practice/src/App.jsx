@@ -10,13 +10,11 @@ export default function App() {
     setMessage(e.target.value);
   };
   
-  const [count, setCount] = React.useState({
-    num: 0,
-  });
+  const [count, setCount] = React.useState(0);
 
   const counter = () => {
     setCount((prev)=>{
-      return {...prev, num: prev.num+1};
+      return prev+1;
     })
   }
 
@@ -29,7 +27,7 @@ export default function App() {
           {message.trim().length >= 3 ? "Valid Message" : "Invalid message"}
         </p>
       </form>
-      <p>{count.num}</p>
+      <p>{count}</p>
       <button onClick={counter}>Increment</button>
     </>
   );
