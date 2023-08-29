@@ -10,6 +10,7 @@
 }
 
 .new-expense button {
+  margin: auto;
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;

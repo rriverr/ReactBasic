@@ -3,6 +3,8 @@ import ExpenseItem from "./ExpenseItem";
 import "./css/Expenses.css";
 import Card from "./Card";
 import ExpensesFilter from "./newexpenses/ExpenseFilter";
+import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 const Expenses = (props) => {
   // const expenses = props.data;
@@ -34,6 +36,25 @@ const Expenses = (props) => {
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filteredYear} onFilter={onFilter} />
+      <ExpensesChart expenses={filteredExpenses}/>
+      <ExpensesList data={filteredExpenses}/>
+
+      {/* {expensesContent} */}
+
+      {/* {filteredExpenses.length === 0 && <p>No Expenses found.</p>}
+      {filteredExpenses.length > 0 &&
+        filteredExpenses.map((item, i) => {
+          return (
+            <ExpenseItem
+              key={item.title}
+              id={item.id}
+              title={item.title}
+              amount={item.amount}
+              date={item.date}
+            />
+          );
+        })} */}
+
       {/* {expenses.map((item, i) => {
         if (item.date.getFullYear().toString() === filteredYear) {
           return (
@@ -47,19 +68,7 @@ const Expenses = (props) => {
           );
         }
       })} */}
-      {filteredExpenses.length === 0 && <p>No Expenses found.</p>}
-      {filteredExpenses.length > 0 &&
-        filteredExpenses.map((item, i) => {
-          return (
-            <ExpenseItem
-              key={item.title}
-              id={item.id}
-              title={item.title}
-              amount={item.amount}
-              date={item.date}
-            />
-          );
-        })}
+
       {/* <ExpenseItem
         id={expenses[0].id}
         title={expenses[0].title}
