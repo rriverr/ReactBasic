@@ -1,21 +1,18 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 3rem;
-  background-color: #2d2c2c;
-  color: #959090;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 3rem;
+    background-color: #2d2c2c;
+    color: #959090;
+    text-align: center;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.5rem;
+li {
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #444047;
+    color: #b2adad;
+    border: 2px solid #8567fd;
 }
 
-input {
-  font: inherit;
-  padding: 0.5rem;
-  background-color: #474545;
-  border: none;
-  border-radius: 4px;
-  color: white;
-}

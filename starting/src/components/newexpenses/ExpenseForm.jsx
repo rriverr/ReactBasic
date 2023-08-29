@@ -5,7 +5,6 @@ const ExpenseForm = (props) => {
   const [title, setTitle] = React.useState("");
   const [amount, setAmount] = React.useState();
   const [date, setDate] = React.useState();
-  console.log(props)
   // const [userInput, setUserInput] = React.useState({
   //   title: "",
   //   amount: "",
